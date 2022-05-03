@@ -1,0 +1,47 @@
+/* Writing an External CSS file 
+	CSS : Cascading Style Sheet	*/   
+h3
+{
+    color: blue;
+    font-size: 55px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: antiquewhite;
+}
+
+/* 2. By using ID name */
+/* to use ID name we use # symbol */
+#myid
+{
+      color : red;
+      background-color : black;
+      font-size : 66px;
+      font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+	/* Box Model */
+	padding : 120px;
+	margin : 120px;
+	border-radius : 120px;
+	border-color : blue;
+	border-style : dotted;
+	border-width : 5px;
+}
+
+/* 3. By using Class name */
+/* to use class name we use . followed by class name */
+.myclass
+{
+       color : fuchsia;
+       background-color : darkseagreen;
+       font-size : 33px;
+       font-family : sans-serif;
+
+	/* Box Model */
+	padding : 20px;
+	margin : 20px;
+	border-radius : 520px;
+	border-color : blue;
+	border-style : double;
+	border-width : 5px;
+}
+
+

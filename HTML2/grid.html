@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Grid & Flex Box </title>
+    <style>
+        #home{ grid-area : home; }
+        #Aboutus{ grid-area : aboutus; }
+        #Gallery{ grid-area : gallery; }
+        #Contactus{ grid-area : contactus; }
+        #Workdone{ grid-area : workdone; }
+
+        #maindiv
+        {
+            display : grid;
+            grid-template-areas : "home home home home home home"
+            "aboutus aboutus aboutus gallery gallery gallery"
+            "contactus contactus contactus workdone workdone workdone";
+
+            padding : 10px;
+            margin : 20px;
+            grid-gap : 10px;
+            background-color : crimson;
+            border-radius : 10px;
+        }
+
+        #maindiv > div  /* add all sub div's to the maindiv */
+        {
+            padding : 10px;
+            margin : 20px;
+            grid-gap : 10px;
+            background-color : cyan;
+            border-radius : 10px;
+            text-align : center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Grid Box (2 Dimensional) -->
+    <!-- it's a combination of Rows and Columns -->
+
+    <div id = "maindiv" >
+        <div id = "home"> Home </div>
+        <div id = "Aboutus"> About us </div>
+        <div id = "Gallery"> Gallery </div>
+        <div id = "Contactus"> Contact us </div>
+        <div id = "Workdone"> Work done </div>
+    </div>
+</body>
+</html>

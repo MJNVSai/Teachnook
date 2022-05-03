@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Flex Box </title>
+    <style>
+
+        #maindiv
+        {
+            display : flex;
+            flex-direction : column; /* you can also give row */
+
+            padding : 10px;
+            margin : 20px;
+            grid-gap : 10px;
+            background-color : crimson;
+            border-radius : 10px;
+        }
+
+        #maindiv > div  /* add all sub div's to the maindiv */
+        {
+            padding : 10px;
+            margin : 20px;
+            grid-gap : 10px;
+            background-color : cyan;
+            border-radius : 10px;
+            text-align : center;
+        }
+
+        body
+        {
+            padding-top : 80px;
+        }
+
+        #Header
+        {
+            position : fixed;
+            top : 0px;
+            background-image : linear-gradient(45deg,red,yellow,cyan);
+            width : 96%;
+            text-align : center;
+            color : firebrick;
+            font-family : 'Gill Sans', 'Gills Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            padding : 3px;
+            margin : 20px;
+            border-radius : 20px;
+        }
+
+        #Footer
+        {
+            width : 96%;
+            position : fixed;
+            bottom : 0px;
+            background-color : darkslategrey;
+            text-align : center;
+            font-family : 'Gill Sans', 'Gills Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            padding : 3px;
+            margin : 20px;
+            border-radius : 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Flex Box (1 Dimensional) -->
+    <!-- it's a combination of either Rows Or Columns -->
+
+    <div id = "Header">
+        <h2> Welcome to My page </h2>
+    </div>
+    <div id = "maindiv" >
+        <div id = "home"> Home </div>
+        <div id = "Aboutus"> About us </div>
+        <div id = "Gallery"> Gallery </div>
+        <div id = "Contactus"> Contact us </div>
+        <div id = "Workdone"> Work done </div>
+    </div>
+
+    <div id = "Footer">
+        <h1> Thank you </h1>
+    </div>
+</body>
+</html>

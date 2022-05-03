@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Animation - 0 </title>
+    <style>
+        body
+        {
+            /* background-color : lightsalmon; */
+            /* background-image : url("https://bit.ly/3vWp4wY"); */
+            /* background-size : 1500px; */
+
+            background-image : url("https://bit.ly/39hwLpE");
+            background-size : cover;
+            background-attachment : fixed; /* scroll also yu can give */
+        }
+
+        h1
+        {
+            color : black;
+            background-image : linear-gradient(90deg, teal, red, yellow);
+            text-transform : capitalize;      /* lowercase, uppercase */
+            text-decoration : underline;        /* underline, linethrough, overline */
+            text-indent : 250px;
+            letter-spacing : 10px;
+            word-spacing : 50px;
+            line-height : 3.0;    /* the space b/n 1st content and 2nd content */
+
+            padding : 20px;
+            margin : 20px;
+            border-radius : 20px;
+        }
+
+        h2
+        {
+            padding : 20px;
+            margin : 20px;
+            border-radius : 20px;
+            line-height : 3.0;
+
+            animation-name : myanim;
+            animation-duration : 5s;
+            animation-iteration-count : infinite;
+        }
+
+        #mybox
+        {
+            height : 200px;
+            width : 200px;
+            background-color : blue;
+
+            border-radius : 20px;
+            margin-right: 1500px;
+            padding : 20px;
+
+            animation-name : myanim;
+            animation-duration : 2s;
+            animation-iteration-count : infinite;
+            position : relative;
+        }
+
+        /* for animations we use @keyframes */
+        @keyframes myanim
+        {
+            /*  from{ background-color : darkgreen; }
+            to{ background-color : darkred; }   */
+
+            25%{ background-color : darkgreen; left : 0px; top : 0px; }
+            50%{ background-color : darkred; left : 200px; top : 0px; }
+            70%{ background-color : blueviolet; left : 200px; top : 200px; }
+            85%{ background-color : purple; left : 0px; top : 200px; }
+            100%{ background-color : olive; left : 0px; top : 0px; }
+        }
+
+        #circle
+        {
+            height : 200px;
+            width : 200px;
+            background-color : cyan;
+
+            border-radius : 50%;
+            margin : 100px;
+            padding : 10px;
+
+            animation-name : circle_rotate;
+            animation-duration : 2s;
+            animation-iteration-count : infinite;
+            position : relative;
+        }
+
+        /*  @keyframes */
+        @keyframes circle_rotate
+        {
+            from{ transform : rotate(0deg)  translateX(150px) rotate(0deg); }
+            to{ transform : rotate(360deg) translateX(150px) rotate(360deg); }
+        }
+
+        img
+        {
+            height : 200px;
+            width : 200px;
+            border-radius : 50%
+        }
+    </style>
+</head>
+<body>
+    <div align = "center" >
+        <h1> Hello Every one </h1>
+        <h1> Hello Every one </h1>
+        <h1> Hello Every one </h1>
+        <h1> Hello Every one </h1>
+
+        <h2> Rizwan the Web developer </h2>
+        <div align = "center" id = "mybox">
+            <h3> Thank you for visiting My Animation Guys </h3>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div align = "center" id = "circle" >
+            <img src = "https://bit.ly/3qVrg6X" >
+        </div>
+    </div>
+</body>
+</html>
